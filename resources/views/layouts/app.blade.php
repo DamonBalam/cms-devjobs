@@ -45,7 +45,7 @@
                             <a class="no-underline hover:underline text-gray-300 text-sm p-3"
                                 href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                                                                         document.getElementById('logout-form').submit();">
+                                                                                                                 document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
@@ -57,6 +57,12 @@
                 </div>
             </div>
         </nav>
+
+        <div class="bg-gray-700">
+            <nav class="container mx-auto flex space-x-1">
+                @yield('navegacion')
+            </nav>
+        </div>
 
         <main class="py-4">
             @yield('content')
